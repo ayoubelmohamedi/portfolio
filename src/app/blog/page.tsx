@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog & Technical Notes // Ayoub Elmohamedi",
+  title: "Conferences, Events & Blog // Ayoub Elmohamedi",
   description:
-    "Engineering notes and post-mortems on web applications, database internals, and systems programming.",
+    "Notes from conferences, developer events, and technical articles on web applications, database internals, and systems programming.",
 };
 
 export default function BlogIndexPage() {
@@ -27,11 +27,11 @@ export default function BlogIndexPage() {
         <div className="flex items-center gap-3">
           <span className="text-accent font-mono text-xs font-semibold">04 / ARCHIVE</span>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-fg">
-            Technical Writing &amp; Notes
+            Conferences, Events &amp; Blog
           </h1>
         </div>
         <p className="text-fg-muted max-w-prose text-base">
-          Essays, engineering post-mortems, and reflections on building web products and low-level systems.
+          Conference takeaways, community events, and technical writing (including published articles, systems deep-dives, and engineering notes).
         </p>
       </header>
 
@@ -66,24 +66,39 @@ export default function BlogIndexPage() {
         ) : (
           <div className="border border-border bg-bg-surface p-6 sm:p-10 rounded-sm space-y-6">
             <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 text-xs font-mono text-amber-300">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                <span>status::no_published_entries</span>
+              <div className="inline-flex items-center gap-2 text-xs font-mono text-accent">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>status::active</span>
               </div>
               <h2 className="text-xl font-bold text-fg">
-                Honest Editorial State: No Published Articles Yet
+                Status
               </h2>
               <p className="text-sm text-fg-muted leading-relaxed max-w-prose">
-                In adherence to strict editorial integrity, I do not generate placeholder articles or publish AI-hallucinated blog posts under my name without personally writing and verifying every technical claim.
+                This space documents conferences, tech events, and blog publications (including technical articles, systems post-mortems, and community notes).
               </p>
             </div>
 
             <div className="border-t border-border/60 pt-6 space-y-4 text-xs font-mono">
               <p className="text-accent font-semibold uppercase tracking-wider text-[11px]">
-                Currently in Technical Draft:
+                Upcoming &amp; In Preparation:
               </p>
               <div className="space-y-3">
                 <div className="p-3 bg-bg border border-border/80 rounded space-y-1">
+                  <div className="flex items-center justify-between text-accent">
+                    <span className="font-semibold uppercase tracking-wider text-[10px]">Conferences &amp; Events</span>
+                    <span className="text-[10px] text-fg-dim">Morocco / 42 Network</span>
+                  </div>
+                  <p className="text-fg font-medium">Community Gatherings &amp; Tech Meetups</p>
+                  <p className="text-fg-dim">
+                    Takeaways from student initiatives and regional technology forums on distributed infrastructure, developer tooling, and modern web architectures.
+                  </p>
+                </div>
+
+                <div className="p-3 bg-bg border border-border/80 rounded space-y-1">
+                  <div className="flex items-center justify-between text-accent">
+                    <span className="font-semibold uppercase tracking-wider text-[10px]">Technical Article</span>
+                    <span className="text-[10px] text-fg-dim">Systems</span>
+                  </div>
                   <p className="text-fg font-medium">1. Nonblocking Socket Loops in C++98</p>
                   <p className="text-fg-dim">
                     Analyzing poll() event loops, partial buffer fragmentation, and why edge-triggered systems behave differently than level-triggered systems.
@@ -91,6 +106,10 @@ export default function BlogIndexPage() {
                 </div>
 
                 <div className="p-3 bg-bg border border-border/80 rounded space-y-1">
+                  <div className="flex items-center justify-between text-accent">
+                    <span className="font-semibold uppercase tracking-wider text-[10px]">Technical Article</span>
+                    <span className="text-[10px] text-fg-dim">Databases</span>
+                  </div>
                   <p className="text-fg font-medium">2. Slotted Pages &amp; Disk Serialization in sqly</p>
                   <p className="text-fg-dim">
                     Why relational storage engines append variable-length row records backward from the page ceiling while pointer slots grow forward from the header.
@@ -98,6 +117,10 @@ export default function BlogIndexPage() {
                 </div>
 
                 <div className="p-3 bg-bg border border-border/80 rounded space-y-1">
+                  <div className="flex items-center justify-between text-accent">
+                    <span className="font-semibold uppercase tracking-wider text-[10px]">Technical Article</span>
+                    <span className="text-[10px] text-fg-dim">Web &amp; Security</span>
+                  </div>
                   <p className="text-fg font-medium">3. ModSecurity &amp; WAF Defense in Node.js Stacks</p>
                   <p className="text-fg-dim">
                     Practical lessons from Darway: tuning CRS regex pipelines to mitigate OWASP Top 10 vulnerabilities without introducing latency penalties.
@@ -108,7 +131,7 @@ export default function BlogIndexPage() {
 
             <div className="border-t border-border/60 pt-4 flex items-center justify-between text-xs text-fg-dim font-mono">
               <span>Editorial Template: content/blog/template.md</span>
-              <span className="text-accent/60">drafts excluded from build</span>
+              <span className="text-accent/60">drafts published after author verification</span>
             </div>
           </div>
         )}

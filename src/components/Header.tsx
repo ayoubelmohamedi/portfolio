@@ -50,9 +50,20 @@ export default function Header() {
               href="/blog"
               className="hover:text-fg hover:underline underline-offset-4 transition-colors"
             >
-              <span className="text-accent/60 mr-1 text-xs">04</span>Blog
+              <span className="text-accent/60 mr-1 text-xs">04</span>Events &amp; Blog
             </Link>
             <span className="text-border">|</span>
+            <a
+              href="/ayoub_cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors flex items-center gap-1.5"
+            >
+              <span>CV</span>
+              <span className="text-xs text-accent" aria-hidden="true">
+                ↗
+              </span>
+            </a>
             <a
               href="https://github.com/ayoubelmohamedi"
               target="_blank"
@@ -110,8 +121,17 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
               className="py-1 hover:text-accent transition-colors"
             >
-              <span className="text-accent/60 mr-2 text-xs">04</span>Blog
+              <span className="text-accent/60 mr-2 text-xs">04</span>Events &amp; Blog
             </Link>
+            <a
+              href="/ayoub_cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-1 text-accent flex items-center gap-1"
+            >
+              <span>CV (PDF)</span>
+              <span className="text-xs">↗</span>
+            </a>
             <a
               href="https://github.com/ayoubelmohamedi"
               target="_blank"

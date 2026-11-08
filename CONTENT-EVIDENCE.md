@@ -12,7 +12,7 @@ This document records the provenance and verification status of claims, links, a
   - Email: `ayoubprog61@gmail.com` (verified from `PROJECT-FACTS.md`)
   - LinkedIn: `https://www.linkedin.com/in/ayoub-elmohamedi-62377419a/` (verified from `PROJECT-FACTS.md`)
   - GitHub: `https://github.com/ayoubelmohamedi` (verified from `PORTFOLIO-PROMPT.md` / `PROJECT-FACTS.md`)
-- **CV**: Supplied at `public/cv.pdf` (imported from `/Users/macbookpro/github/CV/resume.pdf`). Download link enabled in header, hero, and footer.
+- **CV**: Supplied at `public/ayoub_cv.pdf` (imported from `/Users/macbookpro/github/CV/resume.pdf`). Download link enabled in header, hero, and footer.
 
 ## Featured Product Projects
 

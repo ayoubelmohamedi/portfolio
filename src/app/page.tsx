@@ -64,6 +64,18 @@ export default function HomePage() {
                 ↗
               </span>
             </a>
+
+            <a
+              href="/ayoub_cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 border border-border text-fg-muted hover:text-fg hover:border-accent text-xs font-semibold rounded-sm transition-colors"
+            >
+              <span>CV (PDF)</span>
+              <span className="text-accent text-xs" aria-hidden="true">
+                ↗
+              </span>
+            </a>
           </div>
         </div>
 
@@ -414,13 +426,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION 04: BLOG PREVIEW */}
+      {/* SECTION 04: CONFERENCES, EVENTS & BLOG */}
       <section id="blog" className="space-y-6 scroll-mt-24">
         <div className="border-b border-border pb-3 flex items-baseline justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-accent text-xs font-semibold">04 / NOTES</span>
+            <span className="text-accent text-xs font-semibold">04 / EVENTS &amp; BLOG</span>
             <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-fg">
-              Technical Writing &amp; Notes
+              Conferences, Events &amp; Blog
             </h2>
           </div>
           <Link
@@ -452,23 +464,28 @@ export default function HomePage() {
           <div className="border border-border/80 bg-bg-surface/50 p-6 sm:p-8 rounded-sm space-y-3 font-mono text-xs">
             <div className="flex items-center gap-2 text-fg-muted">
               <span className="text-accent">&gt;</span>
-              <span className="font-semibold text-fg">Honest Status: No published articles yet</span>
+              <span className="font-semibold text-fg">Status</span>
             </div>
             <p className="text-fg-muted leading-relaxed">
-              I am currently drafting technical notes on:
+              Updates covering conferences, developer events, and blog posts (including published articles and technical notes):
             </p>
-            <ul className="list-disc list-inside text-fg-dim space-y-1 pl-2">
-              <li>Writing nonblocking HTTP/1.1 socket loops in C++98 without thread pools</li>
-              <li>Slotted-page layout and B+ tree node split mechanics for tiny database engines</li>
-              <li>ModSecurity WAF rules and connection protection in Fastify / Node.js stacks</li>
-              <li>Grounding LLM learning coaches with structured schemas and procedural SVG generation</li>
+            <ul className="list-disc list-inside text-fg-dim space-y-1.5 pl-2">
+              <li>
+                <span className="text-fg-muted font-medium">Conferences &amp; Events:</span> Tracking regional tech gatherings, developer community meetups, and student club initiatives (e.g. 1337 / 42 Network and UM6P).
+              </li>
+              <li>
+                <span className="text-fg-muted font-medium">Systems &amp; Database Internals:</span> Upcoming articles on nonblocking socket loops in C++98 and slotted-page storage mechanics in <span className="text-accent">sqly</span>.
+              </li>
+              <li>
+                <span className="text-fg-muted font-medium">Application Security:</span> WAF/ModSecurity protection strategies and LLM prompt/schema orchestration.
+              </li>
             </ul>
             <p className="text-fg-dim pt-2 border-t border-border/40">
-              Drafts remain unpublished and excluded from search indexes until author review. Check{" "}
+              New write-ups, event recaps, and notes will appear here as they are published. Check{" "}
               <Link href="/blog" className="text-accent hover:underline">
                 /blog
               </Link>{" "}
-              to view the editorial guidelines and template.
+              for the archive index.
             </p>
           </div>
         )}

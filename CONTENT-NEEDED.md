@@ -3,7 +3,7 @@
 This checklist tracks assets, links, and factual details that are not yet available or verified. These do not block the initial local portfolio build, but should be supplied before production deployment.
 
 ## Profile Assets
-- [ ] **Curriculum Vitae (CV)**: PDF document to place in `public/cv.pdf` before enabling a CV download link in the footer/header.
+- [x] **Curriculum Vitae (CV)**: PDF document placed in `public/ayoub_cv.pdf` (imported from `/Users/macbookpro/github/CV/resume.pdf`).
 - [ ] **Custom Domain**: Verify domain registration before configuring canonical URLs in `src/app/robots.ts` and `src/app/sitemap.ts`.
 
 ## Project Links & Media

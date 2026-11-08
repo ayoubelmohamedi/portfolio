@@ -41,6 +41,18 @@ export default function Footer() {
               ↗
             </span>
           </a>
+
+          <a
+            href="/ayoub_cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition-colors flex items-center gap-1"
+          >
+            <span>CV</span>
+            <span className="text-accent/60" aria-hidden="true">
+              ↗
+            </span>
+          </a>
         </div>
       </div>
       <div className="max-w-container mx-auto px-5 sm:px-8 pb-6 pt-2 border-t border-border/40 text-[11px] text-fg-dim flex flex-col sm:flex-row justify-between gap-2">
