@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ProjectStatusBadge from "@/components/ProjectStatusBadge";
 
 export const metadata: Metadata = {
   title: "VisionPro — Case Study // Ayoub Elmohamedi",
@@ -30,9 +31,7 @@ export default function VisionProPage() {
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-fg">
             VisionPro
           </h1>
-          <span className="text-xs font-mono uppercase px-2 py-0.5 rounded border border-amber-600/60 text-amber-300 bg-amber-950/20">
-            Work in Progress
-          </span>
+          <ProjectStatusBadge status="Work in Progress" />
         </div>
 
         <p className="text-lg text-fg-muted max-w-prose">
@@ -54,7 +53,7 @@ export default function VisionProPage() {
           </div>
           <div>
             <span className="text-fg-dim block">Status</span>
-            <span className="text-amber-300">In Active Development</span>
+            <span className="text-accent">In Active Development</span>
           </div>
         </div>
       </header>
@@ -167,7 +166,7 @@ export default function VisionProPage() {
 
             <div>
               <span className="text-fg-dim block">Status</span>
-              <span className="text-amber-300">Work in Progress</span>
+              <span className="text-accent">Work in Progress</span>
             </div>
 
             <div>

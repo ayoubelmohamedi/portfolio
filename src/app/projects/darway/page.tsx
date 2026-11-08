@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ProjectStatusBadge from "@/components/ProjectStatusBadge";
 
 export const metadata: Metadata = {
   title: "Darway — Case Study // Ayoub Elmohamedi",
@@ -29,9 +30,7 @@ export default function DarwayPage() {
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-fg">
             Darway
           </h1>
-          <span className="text-xs font-mono uppercase px-2 py-0.5 rounded border border-sky-700/60 text-sky-300 bg-sky-950/20">
-            Collaborative
-          </span>
+          <ProjectStatusBadge status="Collaborative" />
         </div>
 
         <p className="text-lg text-fg-muted max-w-prose">

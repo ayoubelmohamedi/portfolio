@@ -1,5 +1,6 @@
 import Link from "next/link";
 import AsciiHeroArt from "@/components/AsciiHeroArt";
+import ProjectStatusBadge from "@/components/ProjectStatusBadge";
 import { FEATURED_PROJECTS, SYSTEMS_PROJECTS, COMPACT_SYSTEMS_PROJECTS } from "@/lib/projects";
 import { getAllPosts } from "@/lib/blog";
 
@@ -117,17 +118,7 @@ export default function HomePage() {
                       {proj.title}
                     </Link>
                   </h3>
-                  <span
-                    className={`text-[10px] uppercase font-mono px-2 py-0.5 rounded border ${
-                      proj.status === "Work in Progress"
-                        ? "border-amber-600/60 text-amber-300 bg-amber-950/20"
-                        : proj.status === "Collaborative"
-                        ? "border-sky-700/60 text-sky-300 bg-sky-950/20"
-                        : "border-border text-fg-muted"
-                    }`}
-                  >
-                    {proj.status}
-                  </span>
+                  <ProjectStatusBadge status={proj.status} />
                 </div>
 
                 <p className="text-xs text-accent/80 font-mono">
@@ -210,15 +201,7 @@ export default function HomePage() {
                       {proj.title}
                     </Link>
                   </h3>
-                  <span
-                    className={`text-[10px] uppercase font-mono px-2 py-0.5 rounded border ${
-                      proj.status === "Work in Progress"
-                        ? "border-amber-600/60 text-amber-300 bg-amber-950/20"
-                        : "border-border text-fg-muted"
-                    }`}
-                  >
-                    {proj.status}
-                  </span>
+                  <ProjectStatusBadge status={proj.status} />
                 </div>
 
                 <p className="text-xs text-accent/80 font-mono">

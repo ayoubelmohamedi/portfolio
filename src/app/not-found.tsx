@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="max-w-container mx-auto px-5 sm:px-8 py-20 flex flex-col items-start justify-center min-h-[50vh] space-y-6">
-      <div className="inline-flex items-center gap-2 text-xs font-mono text-amber-300 border border-amber-600/40 bg-amber-950/20 px-2.5 py-1 rounded-sm">
+      <div className="inline-flex items-center gap-2 text-xs font-mono text-accent border border-border/80 bg-bg-surface px-2.5 py-1 rounded-sm">
         <span>ERR_404 // ENOENT</span>
       </div>
 
