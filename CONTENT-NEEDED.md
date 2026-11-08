@@ -4,7 +4,7 @@ This checklist tracks assets, links, and factual details that are not yet availa
 
 ## Profile Assets
 - [x] **Curriculum Vitae (CV)**: PDF document placed in `public/ayoub_cv.pdf` (imported from `/Users/macbookpro/github/CV/resume.pdf`).
-- [ ] **Custom Domain**: Verify domain registration before configuring canonical URLs in `src/app/robots.ts` and `src/app/sitemap.ts`.
+- [x] **Custom Domain**: Verified and configured as `https://ayoubelmohamedi.me` in `src/app/layout.tsx`, `src/app/robots.ts`, and `src/app/sitemap.ts`.
 
 ## Project Links & Media
 - [ ] **VisionPro**:

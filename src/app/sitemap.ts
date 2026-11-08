@@ -3,7 +3,7 @@ import { ALL_PROJECTS } from "@/lib/projects";
 import { getAllPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ayoubelmohamedi.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ayoubelmohamedi.me";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
